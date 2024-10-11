@@ -1,0 +1,326 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Asus\\source\\repos\\ECommerceArchAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1457FC02-BC2F-4191-AD12-0F0D4E9C8E73}|WebAPI\\WebAPI.csproj|c:\\users\\asus\\source\\repos\\ecommercearchapi\\webapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1457FC02-BC2F-4191-AD12-0F0D4E9C8E73}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Asus\\source\\repos\\ECommerceArchAPI\\DataAccess\\Migrations\\20241011190228_Init-Identity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DataAccess\\Migrations\\20241011190228_Init-Identity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A458A8C-FBDA-4BA8-80F0-4195B56803B1}|DataAccess\\DataAccess.csproj|c:\\users\\asus\\source\\repos\\ecommercearchapi\\dataaccess\\concrete\\entityframework\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A458A8C-FBDA-4BA8-80F0-4195B56803B1}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\concrete\\entityframework\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF9F0561-9FC3-4A27-AAAC-FF5A06B6FBBC}|Business\\Business.csproj|c:\\users\\asus\\source\\repos\\ecommercearchapi\\business\\business.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{BF9F0561-9FC3-4A27-AAAC-FF5A06B6FBBC}|Business\\Business.csproj|solutionrelative:business\\business.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF9F0561-9FC3-4A27-AAAC-FF5A06B6FBBC}|Business\\Business.csproj|c:\\users\\asus\\source\\repos\\ecommercearchapi\\business\\dependencyresolver\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF9F0561-9FC3-4A27-AAAC-FF5A06B6FBBC}|Business\\Business.csproj|solutionrelative:business\\dependencyresolver\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF9F0561-9FC3-4A27-AAAC-FF5A06B6FBBC}|Business\\Business.csproj|c:\\users\\asus\\source\\repos\\ecommercearchapi\\business\\concrete\\authmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF9F0561-9FC3-4A27-AAAC-FF5A06B6FBBC}|Business\\Business.csproj|solutionrelative:business\\concrete\\authmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEDCBC74-9760-4CB0-85AF-B26DEF75D7F7}|Entities\\Entities.csproj|c:\\users\\asus\\source\\repos\\ecommercearchapi\\entities\\dtos\\authdtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEDCBC74-9760-4CB0-85AF-B26DEF75D7F7}|Entities\\Entities.csproj|solutionrelative:entities\\dtos\\authdtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF9F0561-9FC3-4A27-AAAC-FF5A06B6FBBC}|Business\\Business.csproj|c:\\users\\asus\\source\\repos\\ecommercearchapi\\business\\abstract\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF9F0561-9FC3-4A27-AAAC-FF5A06B6FBBC}|Business\\Business.csproj|solutionrelative:business\\abstract\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEDCBC74-9760-4CB0-85AF-B26DEF75D7F7}|Entities\\Entities.csproj|c:\\users\\asus\\source\\repos\\ecommercearchapi\\entities\\common\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEDCBC74-9760-4CB0-85AF-B26DEF75D7F7}|Entities\\Entities.csproj|solutionrelative:entities\\common\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1457FC02-BC2F-4191-AD12-0F0D4E9C8E73}|WebAPI\\WebAPI.csproj|c:\\users\\asus\\source\\repos\\ecommercearchapi\\webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1457FC02-BC2F-4191-AD12-0F0D4E9C8E73}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20AFA73C-7C0B-4D3E-8334-EFB7642B390D}|Core\\Core.csproj|c:\\users\\asus\\source\\repos\\ecommercearchapi\\core\\dependencyresolver\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20AFA73C-7C0B-4D3E-8334-EFB7642B390D}|Core\\Core.csproj|solutionrelative:core\\dependencyresolver\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20AFA73C-7C0B-4D3E-8334-EFB7642B390D}|Core\\Core.csproj|c:\\users\\asus\\source\\repos\\ecommercearchapi\\core\\utilities\\security\\concrete\\tokenmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20AFA73C-7C0B-4D3E-8334-EFB7642B390D}|Core\\Core.csproj|solutionrelative:core\\utilities\\security\\concrete\\tokenmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1457FC02-BC2F-4191-AD12-0F0D4E9C8E73}|WebAPI\\WebAPI.csproj|c:\\users\\asus\\source\\repos\\ecommercearchapi\\webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1457FC02-BC2F-4191-AD12-0F0D4E9C8E73}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20AFA73C-7C0B-4D3E-8334-EFB7642B390D}|Core\\Core.csproj|c:\\users\\asus\\source\\repos\\ecommercearchapi\\core\\entities\\concrete\\token.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20AFA73C-7C0B-4D3E-8334-EFB7642B390D}|Core\\Core.csproj|solutionrelative:core\\entities\\concrete\\token.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20AFA73C-7C0B-4D3E-8334-EFB7642B390D}|Core\\Core.csproj|c:\\users\\asus\\source\\repos\\ecommercearchapi\\core\\utilities\\security\\abstract\\itokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20AFA73C-7C0B-4D3E-8334-EFB7642B390D}|Core\\Core.csproj|solutionrelative:core\\utilities\\security\\abstract\\itokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20AFA73C-7C0B-4D3E-8334-EFB7642B390D}|Core\\Core.csproj|c:\\users\\asus\\source\\repos\\ecommercearchapi\\core\\entities\\concrete\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20AFA73C-7C0B-4D3E-8334-EFB7642B390D}|Core\\Core.csproj|solutionrelative:core\\entities\\concrete\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\ECommerceArchAPI\\WebAPI\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\ECommerceArchAPI\\WebAPI\\Controllers\\AuthController.cs*",
+              "RelativeToolTip": "WebAPI\\Controllers\\AuthController.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T19:03:43.195Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "20241011190228_Init-Identity.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\ECommerceArchAPI\\DataAccess\\Migrations\\20241011190228_Init-Identity.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Migrations\\20241011190228_Init-Identity.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\ECommerceArchAPI\\DataAccess\\Migrations\\20241011190228_Init-Identity.cs",
+              "RelativeToolTip": "DataAccess\\Migrations\\20241011190228_Init-Identity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T19:02:28.608Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Business",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\ECommerceArchAPI\\Business\\Business.csproj",
+              "RelativeDocumentMoniker": "Business\\Business.csproj",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\ECommerceArchAPI\\Business\\Business.csproj",
+              "RelativeToolTip": "Business\\Business.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-10-11T18:35:08.715Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AuthManager.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\ECommerceArchAPI\\Business\\Concrete\\AuthManager.cs",
+              "RelativeDocumentMoniker": "Business\\Concrete\\AuthManager.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\ECommerceArchAPI\\Business\\Concrete\\AuthManager.cs",
+              "RelativeToolTip": "Business\\Concrete\\AuthManager.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwCwAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T18:22:49.401Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RegisterDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\ECommerceArchAPI\\Entities\\DTOs\\AuthDTOs\\RegisterDTO.cs",
+              "RelativeDocumentMoniker": "Entities\\DTOs\\AuthDTOs\\RegisterDTO.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\ECommerceArchAPI\\Entities\\DTOs\\AuthDTOs\\RegisterDTO.cs",
+              "RelativeToolTip": "Entities\\DTOs\\AuthDTOs\\RegisterDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T18:21:50.075Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\ECommerceArchAPI\\Entities\\Common\\User.cs",
+              "RelativeDocumentMoniker": "Entities\\Common\\User.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\ECommerceArchAPI\\Entities\\Common\\User.cs",
+              "RelativeToolTip": "Entities\\Common\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T18:18:17.281Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\ECommerceArchAPI\\DataAccess\\Concrete\\EntityFramework\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Concrete\\EntityFramework\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\ECommerceArchAPI\\DataAccess\\Concrete\\EntityFramework\\AppDbContext.cs",
+              "RelativeToolTip": "DataAccess\\Concrete\\EntityFramework\\AppDbContext.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAqwDwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T18:17:07.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\ECommerceArchAPI\\WebAPI\\Program.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\ECommerceArchAPI\\WebAPI\\Program.cs",
+              "RelativeToolTip": "WebAPI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T18:15:27.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ServiceRegistration.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\ECommerceArchAPI\\Core\\DependencyResolver\\ServiceRegistration.cs",
+              "RelativeDocumentMoniker": "Core\\DependencyResolver\\ServiceRegistration.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\ECommerceArchAPI\\Core\\DependencyResolver\\ServiceRegistration.cs",
+              "RelativeToolTip": "Core\\DependencyResolver\\ServiceRegistration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T18:14:51.073Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ServiceRegistration.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\ECommerceArchAPI\\Business\\DependencyResolver\\ServiceRegistration.cs",
+              "RelativeDocumentMoniker": "Business\\DependencyResolver\\ServiceRegistration.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\ECommerceArchAPI\\Business\\DependencyResolver\\ServiceRegistration.cs",
+              "RelativeToolTip": "Business\\DependencyResolver\\ServiceRegistration.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAB0AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T19:38:31.446Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "TokenManager.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\ECommerceArchAPI\\Core\\Utilities\\Security\\Concrete\\TokenManager.cs",
+              "RelativeDocumentMoniker": "Core\\Utilities\\Security\\Concrete\\TokenManager.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\ECommerceArchAPI\\Core\\Utilities\\Security\\Concrete\\TokenManager.cs",
+              "RelativeToolTip": "Core\\Utilities\\Security\\Concrete\\TokenManager.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAYwCgAAABnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T17:52:29.696Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\ECommerceArchAPI\\WebAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "WebAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\ECommerceArchAPI\\WebAPI\\appsettings.json",
+              "RelativeToolTip": "WebAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-11T18:11:57.815Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\ECommerceArchAPI\\Business\\Abstract\\IAuthService.cs",
+              "RelativeDocumentMoniker": "Business\\Abstract\\IAuthService.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\ECommerceArchAPI\\Business\\Abstract\\IAuthService.cs",
+              "RelativeToolTip": "Business\\Abstract\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T16:35:46.253Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Token.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\ECommerceArchAPI\\Core\\Entities\\Concrete\\Token.cs",
+              "RelativeDocumentMoniker": "Core\\Entities\\Concrete\\Token.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\ECommerceArchAPI\\Core\\Entities\\Concrete\\Token.cs",
+              "RelativeToolTip": "Core\\Entities\\Concrete\\Token.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T16:26:17.484Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AppUser.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\ECommerceArchAPI\\Core\\Entities\\Concrete\\AppUser.cs",
+              "RelativeDocumentMoniker": "Core\\Entities\\Concrete\\AppUser.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\ECommerceArchAPI\\Core\\Entities\\Concrete\\AppUser.cs",
+              "RelativeToolTip": "Core\\Entities\\Concrete\\AppUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T16:50:21.986Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ITokenService.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\ECommerceArchAPI\\Core\\Utilities\\Security\\Abstract\\ITokenService.cs",
+              "RelativeDocumentMoniker": "Core\\Utilities\\Security\\Abstract\\ITokenService.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\ECommerceArchAPI\\Core\\Utilities\\Security\\Abstract\\ITokenService.cs",
+              "RelativeToolTip": "Core\\Utilities\\Security\\Abstract\\ITokenService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T16:57:42.05Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1092,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

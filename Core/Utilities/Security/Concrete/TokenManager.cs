@@ -48,6 +48,8 @@ namespace Core.Utilities.Security.Concrete
                 notBefore:DateTime.Now,
                 expires:token.ExpiredDate,
                 signingCredentials:new SigningCredentials(key,SecurityAlgorithms.HmacSha256));
+
+
             JwtSecurityTokenHandler tokenHandler=new();
             token.AccessToken=tokenHandler.WriteToken(securityToken);
             token.RefreshToken = CreateRefreshToken();
@@ -55,7 +57,7 @@ namespace Core.Utilities.Security.Concrete
             return token;
         }
 
-        public string CreateRefreshToken()
+        public string CreateRefreshToken()  
         {
             byte[] number=new byte[32];
             using RandomNumberGenerator random = RandomNumberGenerator.Create();

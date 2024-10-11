@@ -1,5 +1,6 @@
 ﻿using Core.Entities.Concrete;
 using Entities.Concrete;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -54,6 +55,15 @@ namespace DataAccess.Concrete.EntityFramework
                 .HasOne(psc => psc.SubCategory)
                 .WithMany(sc => sc.ProductSubCategories)
                 .HasForeignKey(psc => psc.SubCategoryId);
+
+            modelBuilder.Entity<IdentityUserLogin<string>>()
+        .HasKey(x => new { x.LoginProvider, x.ProviderKey });
+
+            modelBuilder.Entity<IdentityUserRole<string>>()
+                .HasKey(x => new { x.UserId, x.RoleId });
+
+            modelBuilder.Entity<IdentityUserToken<string>>()
+                .HasKey(x => new { x.UserId, x.LoginProvider, x.Name });
         }
 
 
