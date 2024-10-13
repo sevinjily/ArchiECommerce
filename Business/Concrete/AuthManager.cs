@@ -1,4 +1,5 @@
 ﻿using Business.Abstract;
+using Business.Validations.FluentValidation;
 using Core.Entities.Concrete;
 using Core.Utilities.Results.Abstract;
 using Core.Utilities.Results.Concrete.ErrorResults;
@@ -9,6 +10,7 @@ using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -25,6 +27,14 @@ namespace Business.Concrete
 
         public async Task<IResult> RegisterAsync(RegisterDTO model)
         {
+
+            var validator = new RegisterValidation();
+            var validationResult=validator.Validate(model);
+            if (!validationResult.IsValid)
+            {
+                return new ErrorResult(message: validationResult.ToString(),HttpStatusCode.BadRequest);
+            }
+
             User newUser = new()
             {
                 FirstName = model.FirstName,
