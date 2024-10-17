@@ -149,3 +149,6 @@ C:\Users\Asus\source\repos\ECommerceArchAPI\WebAPI\bin\Debug\net8.0\Microsoft.As
 C:\Users\Asus\source\repos\ECommerceArchAPI\WebAPI\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
 C:\Users\Asus\source\repos\ECommerceArchAPI\WebAPI\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\Asus\source\repos\ECommerceArchAPI\WebAPI\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\Asus\source\repos\ECommerceArchAPI\WebAPI\bin\Debug\net8.0\FluentValidation.dll
+C:\Users\Asus\source\repos\ECommerceArchAPI\WebAPI\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
+C:\Users\Asus\source\repos\ECommerceArchAPI\WebAPI\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
