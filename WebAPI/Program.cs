@@ -2,6 +2,7 @@ using Business.DependencyResolver;
 using Core.DependencyResolver;
 using FluentValidation.AspNetCore;
 using WebAPI.Middlewares;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,7 +16,12 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddFluentValidationAutoValidation().AddFluentValidationClientsideAdapters();
+
 builder.Services.AddLogging();
+builder.Host.UseSerilog((context, loggerInformation) =>
+{
+    loggerInformation.ReadFrom.Configuration(context.Configuration);
+});
 
 builder.Services.AddTransient<LocalizationMiddleware>();
 builder.Services.AddTransient<GlobalHandlingExceptionMiddleware>();

@@ -1,5 +1,6 @@
 ﻿
 using Microsoft.AspNetCore.Mvc;
+using Serilog;
 using System.Net;
 using System.Text.Json;
 
@@ -36,7 +37,8 @@ namespace WebAPI.Middlewares
    //         }
 			catch (Exception ex)
 			{
-                _logger.LogError(ex,ex.Message);
+                //_logger.LogError(ex,ex.Message);
+				Log.Error(ex, ex.Message);
 				context.Response.StatusCode=(int)HttpStatusCode.InternalServerError;
 
 				ProblemDetails details = new()
