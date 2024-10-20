@@ -2335,7 +2335,8 @@
           "DataAccess": "1.0.0",
           "FluentValidation": "11.10.0",
           "Microsoft.AspNetCore.Identity": "2.1.39",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2"
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2",
+          "Serilog": "4.0.2"
         },
         "compile": {
           "bin/placeholder/Business.dll": {}

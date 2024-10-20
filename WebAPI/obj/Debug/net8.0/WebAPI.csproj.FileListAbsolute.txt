@@ -161,3 +161,4 @@ C:\Users\Asus\source\repos\ECommerceArchAPI\WebAPI\bin\Debug\net8.0\Serilog.Sett
 C:\Users\Asus\source\repos\ECommerceArchAPI\WebAPI\bin\Debug\net8.0\Serilog.Sinks.Console.dll
 C:\Users\Asus\source\repos\ECommerceArchAPI\WebAPI\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
 C:\Users\Asus\source\repos\ECommerceArchAPI\WebAPI\bin\Debug\net8.0\Serilog.Sinks.File.dll
+C:\Users\Asus\source\repos\ECommerceArchAPI\WebAPI\bin\Debug\net8.0\Serilog.Sinks.Seq.dll

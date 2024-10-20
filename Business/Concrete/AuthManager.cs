@@ -7,6 +7,7 @@ using Core.Utilities.Results.Concrete.SuccesResults;
 using Entities.Common;
 using Entities.DTOs.AuthDTOs;
 using Microsoft.AspNetCore.Identity;
+using Serilog;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -32,6 +33,7 @@ namespace Business.Concrete
             var validationResult=validator.Validate(model);
             if (!validationResult.IsValid)
             {
+                Log.Error(validationResult.ToString());
                 return new ErrorResult(message: validationResult.ToString(),HttpStatusCode.BadRequest);
             }
 
