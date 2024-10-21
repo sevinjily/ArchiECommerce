@@ -2,7 +2,7 @@
   {
     "ContainingType": "WebAPI.Controllers.AuthController",
     "Method": "Register",
-    "RelativePath": "api/Auth",
+    "RelativePath": "api/Auth/Register",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,

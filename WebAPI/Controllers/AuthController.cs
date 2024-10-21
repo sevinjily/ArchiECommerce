@@ -15,10 +15,10 @@ namespace WebAPI.Controllers
         {
             _authService = authService;
         }
-        [HttpPost]
+        [HttpPost("[action]")]
         public async Task<IActionResult> Register([FromBody] RegisterDTO model)
         {
-            var result=await _authService.RegisterAsync(model);
+            var result=await _authService.RegisterAsync(model);             
             if (result.IsSuccess)
                    return Ok(result);
             return BadRequest(result);

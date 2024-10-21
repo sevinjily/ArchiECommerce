@@ -20,7 +20,7 @@ namespace WebAPI.Middlewares
             {
                 var culture=new CultureInfo(lang);
                 //_logger.LogInformation($"Set culture name {culture.Name}");
-                Log.Information($"Set culture name {culture.Name}");
+                Log.Error($"Set culture name {culture.Name}");
 
                 Thread.CurrentThread.CurrentCulture = culture;
                 Thread.CurrentThread.CurrentUICulture = culture;
@@ -30,7 +30,7 @@ namespace WebAPI.Middlewares
             {
                  var culture=new CultureInfo("az");
                 //_logger.LogInformation($"Set culture name {culture.Name}");
-                Log.Information($"Set culture name {culture.Name}");
+                Log.Error($"Set culture name {culture.Name}");
 
                 Thread.CurrentThread.CurrentCulture = culture;
                 Thread.CurrentThread.CurrentUICulture = culture;
