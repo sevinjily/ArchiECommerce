@@ -1,4 +1,5 @@
-﻿using Core.Utilities.Results.Abstract;
+﻿using Core.Entities.Concrete;
+using Core.Utilities.Results.Abstract;
 using Entities.DTOs.AuthDTOs;
 using System;
 using System.Collections.Generic;
@@ -11,6 +12,6 @@ namespace Business.Abstract
     public interface IAuthService
     {
         Task<IResult> RegisterAsync(RegisterDTO model);
-
+        Task<IDataResult<Token>> LoginAsync(LoginDTO loginDTO);
     }
 }

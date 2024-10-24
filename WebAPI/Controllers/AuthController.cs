@@ -24,5 +24,14 @@ namespace WebAPI.Controllers
             return BadRequest(result);
             
         }
+        [HttpPost("[action]")]
+        public async Task<IActionResult> Login([FromBody] LoginDTO loginDTO)
+        {
+            var result= await _authService.LoginAsync(loginDTO);
+            if (result.IsSuccess)
+                return Ok(result);
+            
+                return BadRequest();
+        }
     }
 }

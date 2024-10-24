@@ -1,6 +1,22 @@
 [
   {
     "ContainingType": "WebAPI.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginDTO",
+        "Type": "Entities.DTOs.AuthDTOs.LoginDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebAPI.Controllers.AuthController",
     "Method": "Register",
     "RelativePath": "api/Auth/Register",
     "HttpMethod": "POST",
