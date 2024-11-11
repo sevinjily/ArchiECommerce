@@ -43,13 +43,23 @@ namespace Business.Concrete
             if (result.Succeeded)
             {
                 Token token = await _tokenService.CreateAccessToken(findUser, roles: userRoles.ToList());
-                return new SuccessDataResult<Token>(data:token,HttpStatusCode.OK);  
+                var response= await UpdateRefreshToken(token.RefreshToken,findUser);
+                return new SuccessDataResult<Token>(data:token,statusCode:HttpStatusCode.OK,message:response.ToString());  
             }
             else
             {
                 return new ErrorDataResult<Token>(message:"Username or Password is not valid",HttpStatusCode.BadRequest);
             }
             
+        }
+
+        public Task<IDataResult<Token>> RefreshTokenLoginAsync(string refreshToken)
+        {
+            var user=_userManager.Users.FirstOrDefault(x=> x.RefreshToken==refreshToken);
+            if(user is not null && user.RefreshTokenExpiredDate>DateTime.Now)
+            {
+
+            }
         }
 
         //[ValidationAspect]
@@ -85,6 +95,34 @@ namespace Business.Concrete
 
                 }
                 return new ErrorResult(response, System.Net.HttpStatusCode.BadRequest);
+            }
+        }
+
+        public async Task<IDataResult<string>> UpdateRefreshToken(string refreshToken,AppUser appUser)
+        {
+            if(appUser is not null) 
+                {
+                appUser.RefreshToken = refreshToken;
+                appUser.RefreshTokenExpiredDate = DateTime.Now.AddMonths(1);
+               var result= await _userManager.UpdateAsync(appUser);
+                if(result.Succeeded)
+                {
+                return new SuccessDataResult<string>(data:refreshToken,HttpStatusCode.OK);
+
+                }
+                else
+                {
+                    string response = string.Empty;     
+                    foreach(var error in result.Errors)
+                    {
+                        response+= error.Description+".";
+                    }
+                    return new ErrorDataResult<string>(message:response,HttpStatusCode.BadRequest);
+                }
+                }
+            else
+            {
+                return new ErrorDataResult<string>(HttpStatusCode.NotFound);
             }
         }
     }
