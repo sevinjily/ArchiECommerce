@@ -53,12 +53,20 @@ namespace Business.Concrete
             
         }
 
-        public Task<IDataResult<Token>> RefreshTokenLoginAsync(string refreshToken)
+        public async Task<IDataResult<Token>> RefreshTokenLoginAsync(string refreshToken)
         {
             var user=_userManager.Users.FirstOrDefault(x=> x.RefreshToken==refreshToken);
+            var userRoles=await _userManager.GetRolesAsync(user);
             if(user is not null && user.RefreshTokenExpiredDate>DateTime.Now)
             {
+                Token token = await _tokenService.CreateAccessToken(user, userRoles.ToList());
+                token.RefreshToken=refreshToken;
+                return new SuccessDataResult<Token>(data: token, statusCode: HttpStatusCode.OK);
 
+            }
+            else
+            {
+                return new ErrorDataResult<Token>(statusCode:HttpStatusCode.BadRequest,message:"Yeniden daxil olun");
             }
         }
 
