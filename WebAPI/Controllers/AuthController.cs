@@ -19,7 +19,7 @@ namespace WebAPI.Controllers
         public async Task<IActionResult> Register([FromBody] RegisterDTO model)
         {
             var result=await _authService.RegisterAsync(model);             
-            if (result.IsSuccess)
+            if (result.Success)
                    return Ok(result);
             return BadRequest(result);
             
@@ -28,16 +28,16 @@ namespace WebAPI.Controllers
         public async Task<IActionResult> Login([FromBody] LoginDTO loginDTO)
         {
             var result= await _authService.LoginAsync(loginDTO);
-            if (result.IsSuccess)
+            if (result.Success)
                 return Ok(result);
             
                 return BadRequest();
         }
-        [HttpPost]
+        [HttpPost("refreshToken")]
         public async Task<IActionResult> RefreshTokenLogin([FromBody]RefreshTokenDTO refreshTokenDTO)
         {
             var result=await _authService.RefreshTokenLoginAsync(refreshTokenDTO.RefreshToken);
-            if(result.IsSuccess)
+            if(result.Success)
                 return Ok(result);
             return BadRequest(result);
         }

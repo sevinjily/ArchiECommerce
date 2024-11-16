@@ -28,7 +28,7 @@ namespace Business.Validations.FluentValidation
             RuleFor(x => x.UserName)
                 .NotNull().WithMessage(GetTranslation("UsernameIsRequired"))
                 .NotEmpty().WithMessage(GetTranslation("UsernameIsRequired"))
-                //.Matches("^[a-zA-Z0-9]*$").WithMessage(GetTranslation("UsernameInvalid"))
+                .Matches("^[a-zA-Z0-9]*$").WithMessage(GetTranslation("UsernameInvalid"))
                 .WithName("İstifadəçi adı");
 
             RuleFor(x => x.Email)
@@ -55,6 +55,7 @@ namespace Business.Validations.FluentValidation
 
 
         }
+        
 
         private bool NonDigit(string value)
         {

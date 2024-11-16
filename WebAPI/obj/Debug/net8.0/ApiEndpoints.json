@@ -1,22 +1,6 @@
 [
   {
     "ContainingType": "WebAPI.Controllers.AuthController",
-    "Method": "RefreshTokenLogin",
-    "RelativePath": "api/Auth",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "refreshTokenDTO",
-        "Type": "Entities.DTOs.AuthDTOs.RefreshTokenDTO",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "WebAPI.Controllers.AuthController",
     "Method": "Login",
     "RelativePath": "api/Auth/Login",
     "HttpMethod": "POST",
@@ -26,6 +10,22 @@
       {
         "Name": "loginDTO",
         "Type": "Entities.DTOs.AuthDTOs.LoginDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebAPI.Controllers.AuthController",
+    "Method": "RefreshTokenLogin",
+    "RelativePath": "api/Auth/refreshToken",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "refreshTokenDTO",
+        "Type": "Entities.DTOs.AuthDTOs.RefreshTokenDTO",
         "IsRequired": true
       }
     ],

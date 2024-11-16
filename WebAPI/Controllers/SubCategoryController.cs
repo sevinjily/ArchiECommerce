@@ -20,7 +20,7 @@ namespace WebAPI.Controllers
         public IActionResult Create(AddSubCategoryDTO model)
         {
             var result=_subCategoryService.Create(model);
-            if(result.IsSuccess)
+            if(result.Success)
                 return Ok(result);
             return BadRequest(result);
         }
@@ -28,7 +28,7 @@ namespace WebAPI.Controllers
         public IActionResult Update([FromRoute]Guid id,UpdateSubCategoryDTO model)
         {
             var result = _subCategoryService.Update(id,model);
-            if(result.IsSuccess)
+            if(result.Success)
                 return Ok(result);
             return BadRequest(result);
         }
@@ -36,7 +36,7 @@ namespace WebAPI.Controllers
         public IActionResult Delete([FromRoute]Guid id)
         {
             var result=_subCategoryService.Delete(id);
-            if(result.IsSuccess)
+            if(result.Success)
                 return Ok(result);
             return BadRequest(result);
         }
@@ -44,7 +44,7 @@ namespace WebAPI.Controllers
         public IActionResult Get([FromRoute]Guid id)
         {
             var result= _subCategoryService.Get(id);
-            if (result.IsSuccess)
+            if (result.Success)
                 return Ok(result);
             return BadRequest(result);
         }

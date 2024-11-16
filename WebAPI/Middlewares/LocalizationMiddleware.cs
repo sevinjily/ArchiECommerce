@@ -1,6 +1,7 @@
 ﻿
 using Serilog;
 using System.Globalization;
+using System.Text.RegularExpressions;
 
 namespace WebAPI.Middlewares
 {
@@ -13,29 +14,32 @@ namespace WebAPI.Middlewares
             _logger = logger;
         }
 
-        public Task InvokeAsync(HttpContext context, RequestDelegate next)
+        public async Task InvokeAsync(HttpContext context, RequestDelegate next)
         {
             var lang=context.Request.Headers.AcceptLanguage.FirstOrDefault() ;
+            CultureInfo culture;
             if (lang=="az"||lang=="en-US"||lang=="ru-RU")
             {
-                var culture=new CultureInfo(lang);
-                //_logger.LogInformation($"Set culture name {culture.Name}");
-                Log.Error($"Set culture name {culture.Name}");
+                 culture=new CultureInfo(lang);
+                _logger.LogInformation($"Setting culture to: {culture.Name}");
+                //Log.Error($"Set culture name {culture.Name}");
 
                 Thread.CurrentThread.CurrentCulture = culture;
                 Thread.CurrentThread.CurrentUICulture = culture;
-           return next(context);
+          
             }
             else
             {
-                 var culture=new CultureInfo("az");
-                //_logger.LogInformation($"Set culture name {culture.Name}");
-                Log.Error($"Set culture name {culture.Name}");
+                culture = new CultureInfo("az");
+                _logger.LogInformation($"Setting culture to: {culture.Name} (default)");
+                //Log.Error($"Set culture name {culture.Name}");
 
+
+            }
                 Thread.CurrentThread.CurrentCulture = culture;
                 Thread.CurrentThread.CurrentUICulture = culture;
-           return next(context);
-            }
+
+            await next(context);
         }
     }
 }

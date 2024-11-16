@@ -10,7 +10,7 @@ namespace Core.Utilities.Results.Concrete
 {
     public class Result : IResult
     {
-        public bool IsSuccess{ get; }
+        public bool Success{ get; }
 
         public string Message { get; }
 
@@ -21,7 +21,7 @@ namespace Core.Utilities.Results.Concrete
         }
         public Result(bool success,HttpStatusCode statusCode)
         {
-            IsSuccess = success;
+            Success = success;
             StatusCode = statusCode;
         }
     }

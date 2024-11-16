@@ -9,7 +9,7 @@ namespace Core.Utilities.Results.Abstract
 {
     public interface IResult
     {
-        bool IsSuccess { get; }
+        bool Success { get; }
         string Message { get; }
         HttpStatusCode StatusCode { get; }
     }

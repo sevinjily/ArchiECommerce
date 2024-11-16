@@ -1,16 +1,20 @@
+
+using FluentValidation.AspNetCore;
 using Business.DependencyResolver;
 using Core.DependencyResolver;
-using FluentValidation.AspNetCore;
+
 using WebAPI.Middlewares;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
+
+builder.Services.AddControllers();
+
 // Add services to the container.
 builder.Services.AddBusinessService();
 builder.Services.AddCoreService();
 
-builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -23,6 +27,7 @@ builder.Host.UseSerilog((context, loggerInformation) =>
     loggerInformation.ReadFrom.Configuration(context.Configuration);
 });
 
+
 builder.Services.AddTransient<LocalizationMiddleware>();
 builder.Services.AddTransient<GlobalHandlingExceptionMiddleware>();
 
@@ -34,12 +39,13 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-app.UseMiddleware<LocalizationMiddleware>();
-app.UseMiddleware<GlobalHandlingExceptionMiddleware>();
 
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+
+app.UseMiddleware<LocalizationMiddleware>();
+app.UseMiddleware<GlobalHandlingExceptionMiddleware>();
 
 app.MapControllers();
 

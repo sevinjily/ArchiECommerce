@@ -70,7 +70,7 @@ namespace Business.Concrete
             }
         }
 
-        //[ValidationAspect]
+        //[ValidationAspect(typeof(RegisterValidator))]
         public async Task<IResult> RegisterAsync(RegisterDTO model)
         {
 
