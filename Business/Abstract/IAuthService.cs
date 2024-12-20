@@ -13,7 +13,7 @@ namespace Business.Abstract
     {
         Task<IResult> RegisterAsync(RegisterDTO model);
         Task<IDataResult<Token>> LoginAsync(LoginDTO loginDTO);
-        Task<IDataResult<string>> UpdateRefreshToken(string refreshToken,AppUser appUser);
-        Task<IDataResult<Token>>RefreshTokenLoginAsync(string refreshToken);
+        Task<IDataResult<string>> UpdateRefreshToken(string refreshToken, AppUser appUser);
+        Task<IDataResult<Token>> RefreshTokenLoginAsync(string refreshToken);
     }
 }

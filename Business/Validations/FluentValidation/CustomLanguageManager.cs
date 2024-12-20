@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Business.Validations.FluentValidation
 {
-    public class CustomLanguageManager:LanguageManager
+    public class CustomLanguageManager : LanguageManager
     {
         public CustomLanguageManager()
         {

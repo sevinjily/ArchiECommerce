@@ -63,8 +63,16 @@ namespace Business.Validations.FluentValidation
         }
         private string GetTranslation(string key)
         {
-            return ValidatorOptions.Global.LanguageManager.GetString(key,new CultureInfo(Thread.CurrentThread.CurrentCulture.Name));
+            
+            var culture = CultureInfo.CurrentCulture;
 
+            
+            var translation = ValidatorOptions.Global.LanguageManager.GetString(key, culture);
+
+
+            return !string.IsNullOrEmpty(translation) ? translation : $"Translation missing for key: {key}";
         }
+        
+
     }
 }

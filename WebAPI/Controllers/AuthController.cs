@@ -27,17 +27,17 @@ namespace WebAPI.Controllers
         [HttpPost("[action]")]
         public async Task<IActionResult> Login([FromBody] LoginDTO loginDTO)
         {
-            var result= await _authService.LoginAsync(loginDTO);
+            var result = await _authService.LoginAsync(loginDTO);
             if (result.Success)
                 return Ok(result);
-            
-                return BadRequest();
+
+            return BadRequest();
         }
         [HttpPost("refreshToken")]
-        public async Task<IActionResult> RefreshTokenLogin([FromBody]RefreshTokenDTO refreshTokenDTO)
+        public async Task<IActionResult> RefreshTokenLogin([FromBody] RefreshTokenDTO refreshTokenDTO)
         {
-            var result=await _authService.RefreshTokenLoginAsync(refreshTokenDTO.RefreshToken);
-            if(result.Success)
+            var result = await _authService.RefreshTokenLoginAsync(refreshTokenDTO.RefreshToken);
+            if (result.Success)
                 return Ok(result);
             return BadRequest(result);
         }

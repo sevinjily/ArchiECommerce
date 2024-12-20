@@ -19,13 +19,18 @@ builder.Services.AddCoreService();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddFluentValidationAutoValidation().AddFluentValidationClientsideAdapters();
+//builder.Services.AddFluentValidationAutoValidation().AddFluentValidationClientsideAdapters();
+FluentValidationMvcExtensions.AddFluentValidation(builder.Services.AddControllersWithViews(), x =>
+{
+    x.RegisterValidatorsFromAssemblyContaining<Program>();
+    x.ValidatorOptions.LanguageManager.Culture = new System.Globalization.CultureInfo("az");
+});
 
 builder.Services.AddLogging();
-builder.Host.UseSerilog((context, loggerInformation) =>
-{
-    loggerInformation.ReadFrom.Configuration(context.Configuration);
-});
+//builder.Host.UseSerilog((context, loggerInformation) =>
+//{
+//    loggerInformation.ReadFrom.Configuration(context.Configuration);
+//});
 
 
 builder.Services.AddTransient<LocalizationMiddleware>();
@@ -40,12 +45,13 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseMiddleware<LocalizationMiddleware>();
+app.UseMiddleware<GlobalHandlingExceptionMiddleware>();
+
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
-app.UseMiddleware<LocalizationMiddleware>();
-app.UseMiddleware<GlobalHandlingExceptionMiddleware>();
 
 app.MapControllers();
 
