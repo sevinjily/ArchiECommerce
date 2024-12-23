@@ -27,25 +27,30 @@ namespace Core.Utilities.Security.Concrete
 
         public async Task<Token> CreateAccessToken(AppUser appUser, List<string> roles)
         {
-           Token token = new();
+            var securityKey = _configuration["Token:SecurityKey"];
+            if (string.IsNullOrEmpty(securityKey))
+            {
+                throw new Exception("Security key is null or empty! Check your appsettings.json.");
+            }
+            Token token = new();
             var claims = new List<Claim>()
             {
                 new Claim(JwtRegisteredClaimNames.Jti,Guid.NewGuid().ToString()),
-                new Claim(ClaimTypes.NameIdentifier,appUser.Id),
+                new Claim(ClaimTypes.NameIdentifier,appUser.Id.ToString()),
 
             };
-            foreach (var role in roles)
+            foreach (var role in roles) 
             {
                 claims.Add(new Claim(ClaimTypes.Role,role));
             }
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Token:SecurityKey"]));
-            token.ExpiredDate=DateTime.Now.AddMinutes(2);
+            token.ExpiredDate=DateTime.UtcNow.AddMinutes(2);
             JwtSecurityToken securityToken=new(
                 
-                issuer: _configuration["Token:Issuer"],
                 audience: _configuration["Token:Audience"],
+                issuer: _configuration["Token:Issuer"],
                 claims:claims,
-                notBefore:DateTime.Now,
+                notBefore:DateTime.UtcNow,
                 expires:token.ExpiredDate,
                 signingCredentials:new SigningCredentials(key,SecurityAlgorithms.HmacSha256));
 

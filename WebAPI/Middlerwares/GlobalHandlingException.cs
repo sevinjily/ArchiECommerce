@@ -8,12 +8,12 @@ namespace WebAPI.Middlewares
 {
     public class GlobalHandlingExceptionMiddleware : IMiddleware
     {
-        private readonly ILogger<GlobalHandlingExceptionMiddleware> _logger;
+        //private readonly ILogger<GlobalHandlingExceptionMiddleware> _logger;
 
-        public GlobalHandlingExceptionMiddleware(ILogger<GlobalHandlingExceptionMiddleware> logger)
-        {
-            _logger = logger;
-        }
+        //public GlobalHandlingExceptionMiddleware(ILogger<GlobalHandlingExceptionMiddleware> logger)
+        //{
+        //    _logger = logger;
+        //}
 
         public async Task InvokeAsync(HttpContext context, RequestDelegate next)
         {
@@ -24,7 +24,7 @@ namespace WebAPI.Middlewares
            
             catch (Exception ex)
             {
-                //_logger.LogError(ex,ex.Message);
+                //_logger.LogError(ex, ex.Message);
                 Log.Error(ex, ex.Message);
                 context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
 
