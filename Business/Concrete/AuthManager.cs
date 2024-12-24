@@ -1,4 +1,5 @@
 ﻿using Business.Abstract;
+using Business.Messages;
 using Business.Validations.FluentValidation;
 using Core.Entities.Concrete;
 using Core.Utilities.Results.Abstract;
@@ -55,22 +56,48 @@ namespace Business.Concrete
 
         }
 
-        //public async Task<IDataResult<Token>> RefreshTokenLoginAsync(string refreshToken)
-        //{
-        //    var user = _userManager.Users.FirstOrDefault(x => x.RefreshToken == refreshToken);
-        //    var userRoles = await _userManager.GetRolesAsync(user);
-        //    if (user is not null && user.RefreshTokenExpiredDate > DateTime.Now)
-        //    {
-        //        Token token = await _tokenService.CreateAccessToken(user, userRoles.ToList());
-        //        token.RefreshToken = refreshToken;
-        //        return new SuccessDataResult<Token>(data: token, statusCode: HttpStatusCode.OK);
+        public async Task<IResult> LogOut(string userId)
+        {
+           var user=await _userManager.FindByIdAsync(userId);
+            if(user is not null)
+            {
+                    user.RefreshToken = null;
+                user.RefreshTokenExpiredDate=null;
+                var result=await _userManager.UpdateAsync(user);
+                if(result.Succeeded)
+                {
+                    return new SuccessResult(HttpStatusCode.OK);
+                }
+                else
+                {
+                    string response = string.Empty;
+                    foreach (var error in result.Errors)
+                    {
+                        response += error.Description + ".";
+                    }
+                    return new ErrorResult(response, HttpStatusCode.BadRequest);
+                }   
+            }
+            return new ErrorResult(HttpStatusCode.NotFound);
+        }
 
-        //    }
-        //    else
-        //    {
-        //        return new ErrorDataResult<Token>(statusCode: HttpStatusCode.BadRequest, message: "Yeniden daxil olun");
-        //    }
-        //}
+        public async Task<IDataResult<Token>> RefreshTokenLoginAsync(string refreshToken)
+        {
+            var user = _userManager.Users.FirstOrDefault(x => x.RefreshToken == refreshToken);
+            var userRoles = await _userManager.GetRolesAsync(user);
+
+            if (user is not null && user.RefreshTokenExpiredDate > DateTime.Now)
+            {
+                Token token = await _tokenService.CreateAccessToken(user, userRoles.ToList());
+                token.RefreshToken = refreshToken;
+                return new SuccessDataResult<Token>(data: token, statusCode: HttpStatusCode.OK);
+
+            }
+            else
+            {
+                return new ErrorDataResult<Token>(statusCode: HttpStatusCode.BadRequest, message:AuthMessage.UserNotFound);
+            }
+        }
 
         //[ValidationAspect(typeof(RegisterValidator))]
         public async Task<IResult> RegisterAsync(RegisterDTO model)

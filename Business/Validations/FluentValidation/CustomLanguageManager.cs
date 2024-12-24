@@ -59,7 +59,9 @@ namespace Business.Validations.FluentValidation
             AddTranslation("ru-RU", "PasswordsDoNotMatch", "Пароли не совпадают!");
             AddTranslation("en-US", "PasswordsDoNotMatch", "Passwords do not match!");
 
-
+            AddTranslation("az", "UserNotFound", "Istifadəçi tapılmadı  !");
+            AddTranslation("ru-RU", "UserNotFound", "Пользователь не найден!");
+            AddTranslation("en-US", "UserNotFound", "User not found!");
         }
     }
 }
